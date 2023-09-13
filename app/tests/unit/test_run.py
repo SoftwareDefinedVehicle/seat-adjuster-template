@@ -49,8 +49,6 @@ async def test_on_seat_position_changed():
     position_data_point_reply_mock = MagicMock(spec=DataPointReply)
     position_data_point_reply_mock.return_value = position_data_point_mock
 
-    expected_data = {"position": position_data_point_value_mock.value}
-
     # Mock the publish_event method
     seat_adjuster_app.publish_event = AsyncMock()
 
@@ -70,15 +68,6 @@ async def test_on_set_position_request_received_vehicle_not_moving():
     )
 
     request_data_str = get_valid_request_data_str()
-    request_data = json.loads(request_data_str)
-
-    expected_response_data = {
-        "requestId": request_data["requestId"],
-        "result": {
-            "status": 0,
-            "message": f"Set Seat position to: {request_data['position']}",
-        },
-    }
 
     with mock.patch.object(
         vehicle.Speed,
@@ -103,18 +92,6 @@ async def test_on_set_position_request_received_vehicle_moving():
     )
 
     request_data_str = get_valid_request_data_str()
-    request_data = json.loads(request_data_str)
-
-    error_msg = f"""Not allowed to move seat because vehicle speed
-                is {vehicle_speed_data_point.value} and not 0"""
-
-    expected_response_data = {
-        "requestId": request_data["requestId"],
-        "result": {
-            "status": 1,
-            "message": error_msg,
-        },
-    }
 
     with mock.patch.object(
         vehicle.Speed,
@@ -137,15 +114,6 @@ async def test_on_set_position_request_received_error_path():
     )
 
     request_data_str = get_valid_request_data_str()
-    request_data = json.loads(request_data_str)
-
-    expected_response_data = {
-        "requestId": request_data["requestId"],
-        "result": {
-            "status": 1,
-            "message": "Exception on set Seat position",
-        },
-    }
 
     with mock.patch.object(
         vehicle.Speed,
@@ -170,19 +138,6 @@ async def test_on_set_position_request_received_high_position():
     )
 
     request_data_str = get_invalid_request_data_str()
-    request_data = json.loads(request_data_str)
-
-    error_msg = f"""Provided position {request_data["position"]}  \
-        should not be Greater than 1000 (Max)"""
-
-    expected_response_data = {
-        "requestId": request_data["requestId"],
-        "result": {
-            "status": 1,
-            "message": f"Failed to set the position \
-{request_data['position']}, error: {error_msg}",
-        },
-    }
 
     with mock.patch.object(
         vehicle.Speed,

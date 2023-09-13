@@ -12,8 +12,6 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
-import json
-
 import pytest
 from sdv.test.inttesthelper import IntTestHelper
 from sdv.test.mqtt_util import MqttClient
