@@ -18,13 +18,12 @@ import asyncio
 import logging
 import signal
 
-from vapp import SeatAdjusterApp  # type: ignore # noqa: E402
-from vehicle import vehicle  # type: ignore
-
 from sdv.util.log import (  # type: ignore
     get_opentelemetry_log_factory,
     get_opentelemetry_log_format,
 )
+from vapp import SeatAdjusterApp  # type: ignore # noqa: E402
+from vehicle import vehicle  # type: ignore
 
 logging.setLogRecordFactory(get_opentelemetry_log_factory())
 logging.basicConfig(format=get_opentelemetry_log_format())

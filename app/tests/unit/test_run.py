@@ -20,10 +20,9 @@ from unittest.mock import AsyncMock, MagicMock
 
 import pytest
 from google.protobuf.timestamp_pb2 import Timestamp
-from vehicle import vehicle  # type: ignore
-
 from sdv.vdb.reply import DataPointReply
 from sdv.vdb.types import TypedDataPointResult
+from vehicle import vehicle  # type: ignore
 
 # Get the app directory path
 app_dir_path = os.path.abspath(os.path.join(__file__, "../../.."))

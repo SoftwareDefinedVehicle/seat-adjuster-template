@@ -14,10 +14,7 @@
 
 """A sample Velocitas vehicle app for adjusting seat position."""
 
-import json
 import logging
-
-from vehicle import Vehicle  # type: ignore
 
 from sdv.util.log import (  # type: ignore
     get_opentelemetry_log_factory,
@@ -25,6 +22,7 @@ from sdv.util.log import (  # type: ignore
 )
 from sdv.vdb.reply import DataPointReply
 from sdv.vehicle_app import VehicleApp, subscribe_topic
+from vehicle import Vehicle  # type: ignore
 
 logging.setLogRecordFactory(get_opentelemetry_log_factory())
 logging.basicConfig(format=get_opentelemetry_log_format())
