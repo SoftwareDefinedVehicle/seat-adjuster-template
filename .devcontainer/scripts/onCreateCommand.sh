@@ -14,6 +14,8 @@
 #
 # SPDX-License-Identifier: Apache-2.0
 
+bash /usr/local/share/docker-init.sh
+
 echo "#######################################################"
 echo "### Run VADF Lifecycle Management                   ###"
 echo "#######################################################"
