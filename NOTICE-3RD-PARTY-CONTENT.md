@@ -8,8 +8,8 @@
 |async-timeout|4.0.3|Apache 2.0|
 |attrs|23.1.0|MIT|
 |bandit|1.7.5|Apache 2.0|
-|black|23.7.0|MIT|
-|build|0.10.0|MIT|
+|black|23.9.1|MIT|
+|build|1.0.3|MIT|
 |cfgv|3.4.0|MIT|
 |charset-normalizer|3.2.0|MIT|
 |click|8.1.7|New BSD|
@@ -21,11 +21,11 @@
 |flake8|6.1.0|MIT|
 |frozenlist|1.4.0|Apache 2.0|
 |gitdb|4.0.10|BSD|
-|GitPython|3.1.32|BSD|
+|GitPython|3.1.36|BSD|
 |grpc-stubs|1.53.0.2|MIT|
-|grpcio|1.57.0|Apache 2.0|
-|grpcio-tools|1.57.0|Apache 2.0|
-|identify|2.5.27|MIT|
+|grpcio|1.58.0|Apache 2.0|
+|grpcio-tools|1.58.0|Apache 2.0|
+|identify|2.5.28|MIT|
 |idna|3.4|BSD|
 |markdown-it-py|3.0.0|MIT|
 |mccabe|0.7.0|MIT|
@@ -41,7 +41,7 @@
 |pip|23.2.1|MIT|
 |pip-tools|7.3.0|BSD|
 |platformdirs|3.10.0|MIT|
-|pre-commit|3.3.3|MIT|
+|pre-commit|3.4.0|MIT|
 |protobuf|4.21.12|Google License|
 |pycodestyle|2.11.0|MIT|
 |pyflakes|3.1.0|MIT|
@@ -57,7 +57,7 @@
 |tomli|2.0.1|MIT|
 |types-protobuf|4.24.0.1|Apache 2.0|
 |typing-extensions|4.7.1|Python Software Foundation License|
-|virtualenv|20.24.4|MIT|
+|virtualenv|20.24.5|MIT|
 |wheel|0.41.2|MIT|
 |yarl|1.9.2|Apache 2.0|
 ## Workflows

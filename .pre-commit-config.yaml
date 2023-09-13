@@ -79,29 +79,3 @@ repos:
     rev: v0.1.18
     hooks:
       - id: helmlint
-
-  - repo: https://github.com/Lucas-C/pre-commit-hooks
-    rev: v1.4.2
-    hooks:
-      - id: insert-license
-        files: '.*\.(py|pyi|yaml|yml|sh|helmignore|dockerignore|gitignore)$'
-        args:
-          - --license-filepath
-          - license_header.txt
-          - --comment-style
-          - "#"
-          - --skip-license-insertion-comment=This file is maintained by velocitas CLI, do not modify manually.
-      - id: insert-license
-        files: '.*\.(proto)$'
-        args:
-          - --license-filepath
-          - license_header.txt
-          - --comment-style
-          - //
-      - id: insert-license
-        files: "Dockerfile.*"
-        args:
-          - --license-filepath
-          - license_header.txt
-          - --comment-style
-          - "#"
