@@ -11,21 +11,3 @@
 # under the License.
 #
 # SPDX-License-Identifier: Apache-2.0
-
-##########################################
-# Import src and test requirements
-##########################################
--c app/requirements.txt
--c app/tests/requirements.txt
-##########################################
-# Development Tools Packages
-##########################################
-grpcio-tools
-grpc-stubs
-mypy-protobuf
-pre-commit
-black
-mypy
-bandit
-flake8
-pip-tools>=7.3.0

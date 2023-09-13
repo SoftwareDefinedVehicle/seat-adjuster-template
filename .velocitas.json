@@ -2,7 +2,7 @@
     "packages": [
         {
             "name": "devenv-runtimes",
-            "version": "v2.0.2"
+            "version": "v2.0.3"
         },
         {
             "name": "devenv-github-workflows",
@@ -14,7 +14,7 @@
         },
         {
             "name": "devenv-devcontainer-setup",
-            "version": "v1.2.1"
+            "version": "etas-developer-summit"
         }
     ],
     "variables": {
