@@ -44,6 +44,7 @@
 |pre-commit|3.4.0|MIT|
 |protobuf|4.21.12|Google License|
 |pycodestyle|2.11.0|MIT|
+|pydocstyle|6.3.0|MIT|
 |pyflakes|3.1.0|MIT|
 |Pygments|2.16.1|Simplified BSD|
 |pyproject-hooks|1.0.0|MIT|
@@ -53,6 +54,7 @@
 |setuptools|58.1.0|MIT|
 |six|1.16.0|MIT|
 |smmap|5.0.0|BSD|
+|snowballstemmer|2.2.0|New BSD|
 |stevedore|5.1.0|Apache 2.0|
 |tomli|2.0.1|MIT|
 |types-protobuf|4.24.0.1|Apache 2.0|
