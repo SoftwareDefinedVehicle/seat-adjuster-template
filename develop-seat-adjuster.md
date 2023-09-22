@@ -43,7 +43,7 @@ In the next step, we develop the actual application. You find the skeleton code 
 
 Let us walk through some lines of the code where the logic is in the `vapp.py` while the entry point is in `main.py`.
 
-In the `onStart(self)` function you should subscribe to any changes of the current value of the VSS signal `Vehicle.Cabin.Seat.Row1.Pos1.Position` in the KUKSA Databroker and provide the `on_seat_position_changed` method as callback.
+In the `on_start(self)` function you should subscribe to any changes of the current value of the VSS signal `Vehicle.Cabin.Seat.Row1.Pos1.Position` in the KUKSA Databroker and provide the `on_seat_position_changed` method as callback.
 
 ```python
 async def on_start(self):
@@ -87,7 +87,7 @@ depending on the seat hardware available in the vehicle model.
 ## Start Runtime in DevContainer to test application
 
 As mentioned before, the execution and, thus, the testing of the application requires a set of other components to be available
-like the KUKSA Databroker or an MQTT-broker.
+like the KUKSA Databroker or a MQTT-broker.
 Furthermore, the deployment, the configuration, and the behavior of the application may change depending on the used (container) management solution.
 Therefore, Eclipse Velocitas allows the deployment of the required components and the application with the container management approach of choice inside the DevContainer.
 
@@ -129,7 +129,7 @@ You can trigger the pre-commit as a task in VSCode:
 2. Write `Tasks: Run Task` and press enter
 3. Write `Pre Commit Action` and press enter
 
-The pre commit action should start in a terminal inside VSCode.
+The pre-commit action should start in a terminal inside VSCode.
 
 You can check the available tasks configured by Eclipse Velocitas in `.vscode/tasks.json`.
 
