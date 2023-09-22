@@ -1,9 +1,3 @@
----
-title: "Architecture of Seat Adjuster"
-date: 2022-05-09T14:24:56+05:30
-weight: 2
----
-
 The seat adjuster application interacts with the vehicle through a *Vehicle Abstraction Layer* created by the KUKSA Databroker,
 which uses the [Vehicle Signal Specification (VSS)](https://covesa.github.io/vehicle_signal_specification/)
 to express the current value and in case of actuators also the desired state of the vehicle signal.

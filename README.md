@@ -1,9 +1,3 @@
----
-title: "Seat Adjuster"
-date: 2022-05-09T14:24:56+05:30
-weight: 1
----
-
 The [**seat adjuster**](https://eclipse.dev/velocitas/docs/about/use_cases/seat_adjuster/) is an example to showcase how to create a vehicle application which senses and actuates signals in the vehicle
 for Eclipse Leda with help of Eclipse Velocitas and Eclipse Kuksa.
 

@@ -1,9 +1,3 @@
----
-title: "Deploy Seat Adjuster"
-date: 2022-05-09T14:24:56+05:30
-weight: 4
----
-
 We now want to deploy the application to a target device.
 You may follow the remainder of this guide on a separate device like a RaspberryPi, but you can emulate such a device on your development machine too.
 Either way, we use Eclipse Leda as the target system, which is a Linux-based distribution with pre-installed SDV components like the KUKSA Databroker

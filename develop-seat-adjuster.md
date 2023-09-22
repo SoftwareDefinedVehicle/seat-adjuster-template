@@ -1,9 +1,3 @@
----
-title: "Develop Seat Adjuster"
-date: 2022-05-09T14:24:56+05:30
-weight: 3
----
-
 The following pages show how to execute the explained setup using Eclipse Velocitas 0.9.0 and Eclipse Leda 0.1.0:
 
 On a high level, you need to perform the following steps:

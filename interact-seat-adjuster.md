@@ -1,9 +1,3 @@
----
-title: "Interact with Seat Adjuster"
-date: 2022-05-09T14:24:56+05:30
-weight: 6
----
-
 We interact with the seat application through MQTT messages to emulate the behavior of an offboard application.
 To see the responses from the seat adjuster app, subscribe to MQTT topics `seatadjuster/#``.
 

@@ -1,9 +1,3 @@
----
-title: "CAN Setup for Seat Adjuster"
-date: 2022-05-09T14:24:56+05:30
-weight: 10
----
-
 ## Virtual CAN-Bus
 
 1. You will have to generate initial CAN frames that will emulate the car ECU responding to the service:
