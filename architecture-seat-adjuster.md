@@ -41,6 +41,7 @@ An example request looks like this:
 mosquitto_pub -t seatadjuster/setPosition/request
     -m '{"position": 1000, "requestId": "12345"}'
 ```
+> `mosquitto_pub` needs to be installed on the system.
 
 The position parameter can be any value between 0 and 1000.
 
